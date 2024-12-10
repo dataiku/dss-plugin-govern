@@ -1,13 +1,7 @@
 # Changelog
 
-## Version X.Y.Z - Type of release (*) - YYYY-MM-DD
-- Changes 1 ...
-- Changes 2 ... 
-- ...
-
-(*) Possible types of releases
-
-- Initial release
-- Bugfix release
-- Feature release
-- .... 
+## Version 0.1.0 - Initial release - YYYY-MM-DD
+- Connecting to a Dataiku Govern instance and retrieve items in JSON format
+- Ability to retrieve template structure (blueprint versions) for each item
+- Ability to multi-select a list of item types for a single dataset
+- Ability to connect to any Dataiku Govern instance providing the host and API key required

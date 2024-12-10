@@ -1,0 +1,50 @@
+{
+    "meta": {
+        "label": "Parameter set for instance configuration",
+        "description": "Configure how to connect to a remote Dataiku Govern instance.",
+        "icon": "fas fa-gavel"
+    },
+    "defaultDefinableInline": true,
+    "defaultDefinableAtProjectLevel": true,
+    "pluginParams": [
+        {
+            "name": "use_govern_integration_settings",
+            "label": "Use Dataiku Govern integration settings",
+            "description": "Choose which Dataiku Govern instance to use: if unchecked, you must specify the host and API Key of the instance below; if checked (only work with DSS v13.3.2+), it uses the Dataiku Govern instance configured in the integration settings of the general settings and its admin API Key",
+            "type": "BOOLEAN",
+            "defaultValue": false,
+            "mandatory": true
+        }
+    ],
+    "params": [
+        {
+            "name": "govern_host",
+            "label": "Govern host",
+            "type": "STRING",
+            "defaultValue": "",
+            "mandatory": false
+        },
+        {
+            "name": "govern_key",
+            "label": "Govern API Key",
+            "type": "PASSWORD",
+            "defaultValue": "",
+            "mandatory": false
+        },
+        {
+            "name": "govern_no_check_certificate",
+            "label": "Trust all certificates",
+            "type": "BOOLEAN",
+            "defaultValue": false,
+            "mandatory": false
+        },
+        {
+            "name": "impersonate_govern_user",
+            "label": "Impersonate a Govern user",
+            "description": "Leave empty if you want to connect with the API Key access, or, if the API Key is admin, you can fill it with a user of the Dataiku Govern instance to impersonate them.",
+            "type": "STRING",
+            "defaultValue": "",
+            "mandatory": false
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "meta": {
+        "label": "Govern items",
+        "description": "Retrieve Dataiku Govern items from your Govern instance",
+        "icon": "fas fa-gavel"
+    },
+    "readable": true,
+    "writable": false,
+    "supportAppend": false,
+    "paramsPythonSetup": "compute_available_blueprint_ids.py",
+    "params": [
+        {
+            "name": "separator_input",
+            "label": "Input Parameters",
+            "type": "SEPARATOR"
+        },
+        {
+            "name": "blueprint_ids",
+            "label": "Item types",
+            "description": "Select the item types (Blueprint IDs) for which information will be fetched from Govern",
+            "type": "MULTISELECT",
+            "mandatory": true,
+            "getChoicesFromPython": true
+        },
+        {
+            "name": "retrieve_bp_bpv",
+            "label": "Retrieve the associated schemas",
+            "description": "Use to retrieve the associated blueprint and blueprint version schemas associated to each items",
+            "type": "BOOLEAN",
+            "defaultValue": false,
+            "mandatory": false
+        },
+        {
+            "name": "separator_configuration",
+            "label": "Govern instance configuration",
+            "type": "SEPARATOR"
+        },
+        {
+            "name": "instance_configuration_preset",
+            "label": "Dataiku Govern instance configuration preset",
+            "type": "PRESET",
+            "parameterSetId": "instance-configuration",
+            "mandatory": true
+        }
+    ]
+}
