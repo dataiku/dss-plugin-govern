@@ -10,7 +10,7 @@
         {
             "name": "use_govern_integration_settings",
             "label": "Use Dataiku Govern integration settings",
-            "description": "Choose which Dataiku Govern instance to use: if checked, it uses the one configured in the integration settings of the general settings; if unchecked, you must specify the host and API Key of the instance below",
+            "description": "Choose which Dataiku Govern instance to use: if unchecked, you must specify the host and API Key of the instance below; if checked (only work with DSS v13.3.2+), it uses the Dataiku Govern instance configured in the integration settings of the general settings and its admin API Key",
             "type": "BOOLEAN",
             "defaultValue": false,
             "mandatory": true
@@ -32,7 +32,7 @@
             "mandatory": false
         },
         {
-            "name": "govern_insecure_tls",
+            "name": "govern_no_check_certificate",
             "label": "Trust all certificates",
             "type": "BOOLEAN",
             "defaultValue": false,
@@ -41,7 +41,7 @@
         {
             "name": "impersonate_govern_user",
             "label": "Impersonate a Govern user",
-            "description": "Leave empty if you want to connect to Dataiku Govern with the API Key access, or fill it with a user of the Dataiku Govern instance to impersonate them (the configured API Key must be admin for that).",
+            "description": "Leave empty if you want to connect with the API Key access, or, if the API Key is admin, you can fill it with a user of the Dataiku Govern instance to impersonate them.",
             "type": "STRING",
             "defaultValue": "",
             "mandatory": false
