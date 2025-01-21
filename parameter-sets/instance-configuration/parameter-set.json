@@ -6,16 +6,7 @@
     },
     "defaultDefinableInline": true,
     "defaultDefinableAtProjectLevel": true,
-    "pluginParams": [
-        {
-            "name": "use_govern_integration_settings",
-            "label": "Use Dataiku Govern integration settings",
-            "description": "Choose which Dataiku Govern instance to use: if unchecked, you must specify the host and API Key of the instance below; if checked (only work with DSS v13.3.2+), it uses the Dataiku Govern instance configured in the integration settings of the general settings and its admin API Key",
-            "type": "BOOLEAN",
-            "defaultValue": false,
-            "mandatory": true
-        }
-    ],
+    "pluginParams": [],
     "params": [
         {
             "name": "govern_host",

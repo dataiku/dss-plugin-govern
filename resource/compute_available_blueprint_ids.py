@@ -2,7 +2,7 @@ from govern_client import get_govern_client, get_settings
 import json
 
 def do(payload, config, plugin_config, inputs):
-    settings = get_settings(config, plugin_config)
+    settings = get_settings(config)
     if settings is None:
         return {"choices": []}
     else:

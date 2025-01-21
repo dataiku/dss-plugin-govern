@@ -10,7 +10,7 @@ class GovernItemsConnector(Connector):
 
     def __init__(self, config, plugin_config):
         Connector.__init__(self, config, plugin_config)
-        self.govern_client = get_govern_client(get_settings(config, plugin_config))
+        self.govern_client = get_govern_client(get_settings(config))
         self.blueprint_ids = config.get("blueprint_ids", [])
         self.retrieve_bp_bpv = config.get("retrieve_bp_bpv", False)
 
