@@ -6,6 +6,6 @@ Documentation: https://www.dataiku.com/product/plugins/govern/
 
 ### Licence
 
-Copyright 2020-2024 Dataiku SAS
+Copyright 2025 Dataiku SAS
 
 This plugin is distributed under the Apache License version 2.0

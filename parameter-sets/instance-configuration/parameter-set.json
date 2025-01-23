@@ -1,6 +1,6 @@
 {
     "meta": {
-        "label": "Parameter set for instance configuration",
+        "label": "Credentials",
         "description": "Configure how to connect to a remote Dataiku Govern instance.",
         "icon": "fas fa-gavel"
     },
@@ -11,6 +11,7 @@
         {
             "name": "govern_host",
             "label": "Govern host",
+            "description": "ie. 'https://govern.mycorp.com:6543/'",
             "type": "STRING",
             "defaultValue": "",
             "mandatory": false

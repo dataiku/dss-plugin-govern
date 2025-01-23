@@ -42,7 +42,7 @@ class GovernItemsConnector(Connector):
                     returned_data['blueprint_json'] = json.dumps(response_hit.get_raw()['blueprint'])
                     returned_data['blueprint_version_json'] = json.dumps(response_hit.get_raw()['blueprintVersion'])
                 yield returned_data
-            if (records_limit >= 0 and items_count >= records_limit) or not response.get_raw()['hasNextPage']:
+            if (records_limit >= 0 and items_count >= records_limit) or not response.get_raw().get('hasNextPage'):
                 break
 
     def get_records_count(self, partitioning=None, partition_id=None):
