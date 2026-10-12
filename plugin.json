@@ -1,15 +1,19 @@
 {
-    "id": "govern",
-    "version": "0.1.0",
-    "meta": {
-        "label": "Govern",
-        "category": "Govern",
-        "description": "Retrieve data from your Govern instance",
-        "author": "Dataiku (Samuel PICQUENOT)",
-        "icon": "fas fa-gavel",
-        "licenseInfo": "Apache Software License",
-        "url": "https://www.dataiku.com/product/plugins/govern/",
-        "tags": ["Audit", "Compliance", "Dataset"],
-        "supportLevel": "NOT_SUPPORTED"
-    }
+  "id": "govern",
+  "version": "0.2.0",
+  "meta": {
+    "label": "Govern",
+    "category": "Govern",
+    "description": "Retrieve data from your Govern instance",
+    "author": "Dataiku (Samuel PICQUENOT)",
+    "icon": "fas fa-gavel",
+    "licenseInfo": "Apache Software License",
+    "url": "https://www.dataiku.com/product/plugins/govern/",
+    "tags": [
+      "Audit",
+      "Compliance",
+      "Dataset"
+    ],
+    "supportLevel": "NOT_SUPPORTED"
+  }
 }
